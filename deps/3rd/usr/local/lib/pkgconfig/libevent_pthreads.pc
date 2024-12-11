@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/home/yellow/miniob_2023/miniob_hzy/deps/3rd/usr/local
+exec_prefix=/home/yellow/miniob_2023/miniob_hzy/deps/3rd/usr/local
+libdir=/home/yellow/miniob_2023/miniob_hzy/deps/3rd/usr/local/lib
+includedir=/home/yellow/miniob_2023/miniob_hzy/deps/3rd/usr/local/include
+
+Name: libevent_pthreads
+Description: libevent_pthreads adds pthreads-based threading support to libevent
+Version: 2.1.12
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_pthreads
+Libs.private:  
+Cflags: -I${includedir} 
+
